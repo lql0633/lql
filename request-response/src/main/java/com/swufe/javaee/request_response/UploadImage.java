@@ -11,7 +11,7 @@ import java.io.IOException;
 @MultipartConfig
         public class UploadImage extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        request.getPart("Upload").write("C:\\Users\\邱子砚\\Desktop.png");
+        request.getPart("Upload").write("C:\Users\青林\Desktop\homework\request-response\src\main\java\com\swufe\javaee\request_response");
         response.sendRedirect("Success.html");
 
     }
