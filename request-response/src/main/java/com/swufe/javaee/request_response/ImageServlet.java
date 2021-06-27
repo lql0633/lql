@@ -12,7 +12,7 @@ public class ImageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         InputStream is = getServletContext().getResourceAsStream("/image/beer.jpeg");
-        InputStream is2 = getClass().getClassLoader().getResourceAsStream("/cat.jpeg");
+        InputStream is2 = getClass().getClassLoader().getResourceAsStream("/stool.jpeg");
         response.setContentType("image/jpeg");
         byte[] buffer = new byte[1024];
         OutputStream os = response.getOutputStream();
